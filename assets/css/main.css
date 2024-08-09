@@ -121,6 +121,7 @@ button.custom {
     line-height: 40px;
     font-size: 22px;
     font-weight: 600;
+    color: #434343;
 }
 
 button.custom:hover{
