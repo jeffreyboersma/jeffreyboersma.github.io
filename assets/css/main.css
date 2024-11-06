@@ -72,6 +72,29 @@ input, select, textarea {
 	appearance: none;
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fact {
+    border-radius: 0.35em;
+    background: #EEEEEE;
+    padding: 15px;
+    padding-bottom: 4px;
+    display: block;
+    margin-bottom: 15px
+}
+
+
+
 /* Basic */
 
 	html {
@@ -3077,12 +3100,16 @@ input, select, textarea {
 			}
 
 				#header h1 {
-					font-size: 2em;
+					font-size: 2.75em;
 				}
 
 					#header h1 br {
 						display: inline;
 					}
+
+				#header h2 {
+				    font-size: 1.5em;
+				}
 
 		/* Footer */
 
