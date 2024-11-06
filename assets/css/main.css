@@ -137,6 +137,29 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
+	img.logo_icon {
+	    border-radius: 17%;
+	}
+
+	img.logo_icon_white {
+        border-radius: 17%;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: black;
+    }
+
+	img {
+	    color: #ab6d02
+	}
+
+	a img:hover {
+	      -webkit-filter: brightness(80%);
+          outline-style: solid;
+          outline-color: #ab6d02
+          outline-width: 2px;
+          transition: all .1s ease;
+    }
+
 		a:hover {
 			border-bottom-color: transparent;
 			color: #ab6d02 !important;
@@ -2167,6 +2190,16 @@ input, select, textarea {
 			.image.avatar img {
 				border-radius: 100%;
 				width: 100%;
+				border-style: solid;
+                border-width: 4px;
+			}
+
+			.image.avatar img:hover {
+			    -webkit-filter: brightness(90%);
+                outline-style: solid;
+                outline-width: 6px;
+                outline-offset: -1px;
+                transition: all .2s ease;
 			}
 
 /* List */
