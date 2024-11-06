@@ -84,13 +84,49 @@ input, select, textarea {
   clear: both;
 }
 
-.fact {
+a.fact {
     border-radius: 0.35em;
     background: #EEEEEE;
     padding: 15px;
     padding-bottom: 4px;
     display: block;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    display: block;
+    text-decoration: none;
+
+}
+
+
+
+a.fact:hover{
+    -webkit-filter: brightness(80%);
+
+    transition: all .2s ease;
+}
+
+#header h2 a:hover {
+    border-bottom-color: transparent;
+    color: #ab6d02 !important;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .1s ease;
+}
+
+button.custom {
+    border-radius: 0.35em;
+    border-color: transparent;
+    background: #EEEEEE;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+button.custom:hover{
+    -webkit-filter: brightness(80%);
+    transition: all .2s ease;
+    cursor: pointer;
 }
 
 
@@ -128,12 +164,12 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
-	a {
+	a.text_link {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.05s ease-in-out, border-color 0.2s ease-in-out;
-		color: #ab6d02;
+		color: #434343;
 		text-decoration: none;
 	}
 
@@ -148,23 +184,37 @@ input, select, textarea {
         border-color: black;
     }
 
+    img.logo_icon_white_link {
+            border-radius: 17%;
+            border-style: solid;
+            border-width: 0.5px;
+            border-color: black;
+        }
+
+    img.logo_icon_link {
+    	    border-radius: 17%;
+    	}
+
 	img {
 	    color: #ab6d02
 	}
 
-	a img:hover {
+	a img.logo_icon_link:hover {
 	      -webkit-filter: brightness(80%);
-          outline-style: solid;
-          outline-color: #ab6d02
-          outline-width: 2px;
-          transition: all .1s ease;
+          transition: all .2s ease;
     }
 
-		a:hover {
+    a img.logo_icon_white_link:hover {
+    	      -webkit-filter: brightness(80%);
+              transition: all .2s ease;
+        }
+
+		a.text_link:hover {
 			border-bottom-color: transparent;
 			color: #ab6d02 !important;
 			text-decoration: none;
 			font-weight: 600;
+			transition: all .1s ease;
 		}
 
 	strong, b {
