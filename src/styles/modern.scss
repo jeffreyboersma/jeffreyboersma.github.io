@@ -1,0 +1,18 @@
+@use 'variables';
+@use 'base/reset';
+@use 'base/typography';
+@use 'components/layout';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/page-header';
+@use 'components/chips';
+@use 'components/theme-toggle';
+
+// Global styles for company logos (except in chips)
+.chip img[src*="/logos/"] {
+    border-radius: 0 !important;
+}
+
+img[src*="/logos/"] {
+    border-radius: 8px;
+}

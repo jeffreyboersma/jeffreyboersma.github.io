@@ -1,0 +1,52 @@
+:root {
+    /* Typography */
+    --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-size-base: 16px;
+    --font-size-sm: 0.875rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --container-width: 1100px;
+    --border-radius: 8px;
+
+    /* Light Mode (Default) */
+    --color-bg: #ffffff;
+    --color-bg-secondary: #f7f7f7;
+    --color-bg-secondary-hover: #eeeeee;
+    --color-text: #1a1a1a;
+    --color-text-muted: #666666;
+    --color-border: #e5e5e5;
+    --color-primary: #E65100;
+    /* Dark Orange */
+    --color-primary-hover: #EF6C00;
+    --color-accent: #ffd700;
+    /* Gold */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] {
+    /* Dark Mode */
+    --color-bg: #121212;
+    --color-bg-secondary: #1e1e1e;
+    --color-bg-secondary-hover: #2d2d2d;
+    --color-text: #ffffff;
+    --color-text-muted: #a3a3a3;
+    --color-border: #333333;
+    --color-primary: #FF9800;
+    /* Bright Orange */
+    --color-primary-hover: #FFB74D;
+    --color-accent: #ffd700;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.5);
+}

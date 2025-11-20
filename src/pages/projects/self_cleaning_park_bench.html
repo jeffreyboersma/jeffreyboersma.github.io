@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Jeffrey Boersma - Self-Cleaning Park Bench</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="icon" href="/images/logos/icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles/modern.scss" />
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const currentTheme = savedTheme || systemPreference;
+      document.documentElement.setAttribute('data-theme', currentTheme);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/index.html" class="header__logo">Jeffrey Boersma</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="margin-top: 2rem;">
+      <a href="/index.html" class="btn btn--outline">&larr; Back to Home</a>
+    </div>
+
+    <section class="section">
+      <div class="page-header">
+        <h1 class="page-header__title">Self-Cleaning Park Bench</h1>
+        <div class="page-header__meta">
+          <div class="page-header__company">
+            <img src="/images/logos/western.png" alt="Western University" width="40">
+            <a href="https://www.uwo.ca" target="_blank">University of Western Ontario</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="page-layout">
+        <div class="page-layout__content">
+          <div style="margin-top: 2rem;">
+            <h3>Summary</h3>
+            <p>
+              The Self-Cleaning Park Bench was my <i>Microprocessors and Microcomputers</i> course project.
+            </p>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3>Key Points</h3>
+            <ul style="padding-left: 1.5rem; color: var(--color-text-muted);">
+              <li>Designed the control system for a self-cleaning park bench concept, intended to apply microcontrollers
+                to
+                solve a real-world problem</li>
+              <li>Programmed code in C to take environmental data from sensors and use it to control the behaviour of
+                the
+                bench cleaning actuation system</li>
+              <li>Simulated and verified code behaviour using an ARM Cortex A9 DE10 microcontroller simulator. Developed
+                a
+                system for using the simulator's built-in VGA display</li>
+              <li>Investigated the microcontroller's memory space in the simulator to find and map the memory allocated
+                to
+                the VGA display because the documentation on the display was insufficient</li>
+              <li>Created a MATLAB script to convert images to the proper size and colour code format to be displayed on
+                the
+                simulator's VGA display</li>
+              <li>Compiled a final report to properly document the design process and the developed software</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="page-layout__sidebar">
+          <h3>Tech Stack</h3>
+          <div class="chip-list">
+            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="chip">
+              <img src="/images/logos/c.png" alt="">
+              C
+            </a>
+            <a href="https://en.wikipedia.org/wiki/MATLAB" class="chip">
+              <img src="/images/logos/matlab.png" alt="">
+              MATLAB
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Microsoft_Excel" class="chip">
+              <img src="/images/logos/excel.png" alt="">
+              Excel
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Microsoft_Word" class="chip">
+              <img src="/images/logos/word.png" alt="">
+              Word
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Git" class="chip">
+              <img src="/images/logos/git.png" alt="">
+              Git
+            </a>
+            <a href="https://en.wikipedia.org/wiki/GitHub" class="chip">
+              <img src="/images/logos/github.png" alt="">
+              GitHub
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jeffrey Boersma. Built with Vite & SCSS.</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+        <a href="http://www.linkedin.com/in/jeffreyboersma">LinkedIn</a>
+        <a href="mailto:jeffrey.boersma@hotmail.com">Email</a>
+        <a href="https://github.com/jeffreyboersma">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/scripts/main.js"></script>
+</body>
+
+</html>
