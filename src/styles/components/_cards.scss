@@ -43,6 +43,11 @@
         color: var(--color-text-muted);
         margin-bottom: var(--spacing-sm);
         font-weight: 500;
+
+        &--large {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--spacing-xs);
+        }
     }
 
     &__content {
