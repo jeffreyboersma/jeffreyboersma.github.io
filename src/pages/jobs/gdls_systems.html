@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Jeffrey Boersma - Systems Engineer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="icon" href="/images/logos/icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles/modern.scss" />
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const currentTheme = savedTheme || systemPreference;
+      document.documentElement.setAttribute('data-theme', currentTheme);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/index.html" class="header__logo">Jeffrey Boersma</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="margin-top: 2rem;">
+      <a href="/index.html" class="btn btn--outline">&larr; Back to Home</a>
+    </div>
+
+    <section class="section">
+      <div class="page-header">
+        <h1 class="page-header__title">Systems Engineer</h1>
+        <div class="page-header__meta">
+          <div class="page-header__company">
+            <img src="/images/logos/generaldynamics.png" alt="General Dynamics Land Systems" width="40">
+            <a href="https://app.gdls.com/" target="_blank">General Dynamics Land Systems</a>
+          </div>
+          <span>March 2024 - November 2024</span>
+        </div>
+      </div>
+
+
+      <div class="page-layout">
+        <div class="page-layout__content">
+          <div style="margin-top: 2rem;">
+            <h3>Summary</h3>
+            <p>
+              In my role as a Systems Engineer, I was primarily responsible for managing, decomposing,
+              and ensuring compliance to customer requirements in Light Armoured Vehicle (LAV)
+              projects. I worked closely with subject-matter experts around GDLS to draft complete
+              internal requirements sets for all vehicle subsystems. The requirements databases were
+              kept in IBM Rational DOORS, and I leveraged DOORS Extension Language (DXL) to create
+              automations that greatly improved the efficiency of requirements management tasks.
+            </p>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3>Key Points</h3>
+            <ul style="padding-left: 1.5rem; color: var(--color-text-muted);">
+              <li>Developed and managed requirements databases in IBM Rational DOORS for defense projects</li>
+              <li>Ensured stakeholder needs were clearly and traceably translated into verifiable subsystem requirements
+              </li>
+              <li>Collaborated with a wide range of subject matter experts to compile suitable and consistent sets of
+                requirements for developing effective solutions</li>
+              <li>Developed automation scripts using DOORS Extension Language (DXL) to improve the efficiency of
+                requirements management processes</li>
+              <li>Compiled component specification requirements to be sent out to suppliers for sub-contracted
+                components
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="page-layout__sidebar">
+          <h3>Tech Stack</h3>
+          <div class="chip-list">
+            <a href="https://en.wikipedia.org/wiki/Rational_DOORS" class="chip">
+              <img src="/images/logos/doors.png" alt="">
+              Rational DOORS
+            </a>
+            <a href="https://en.wikipedia.org/wiki/DOORS_Extension_Language" class="chip">
+              <img src="/images/logos/doors.png" alt="">
+              DXL
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Microsoft_Excel" class="chip">
+              <img src="/images/logos/excel.png" alt="">
+              Excel
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Microsoft_Word" class="chip">
+              <img src="/images/logos/word.png" alt="">
+              Word
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Microsoft_PowerPoint" class="chip">
+              <img src="/images/logos/powerpoint.png" alt="">
+              PowerPoint
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Microsoft_Visio" class="chip">
+              <img src="/images/logos/visio.png" alt="">
+              Visio
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jeffrey Boersma. Built with Vite & SCSS.</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+        <a href="http://www.linkedin.com/in/jeffreyboersma">LinkedIn</a>
+        <a href="mailto:jeffrey.boersma@hotmail.com">Email</a>
+        <a href="https://github.com/jeffreyboersma">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/scripts/main.js"></script>
+</body>
+
+</html>

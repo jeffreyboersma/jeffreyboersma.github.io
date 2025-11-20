@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Jeffrey Boersma</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="icon" href="/images/logos/icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/modern.scss" />
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const currentTheme = savedTheme || systemPreference;
+      document.documentElement.setAttribute('data-theme', currentTheme);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__logo">Jeffrey Boersma</div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="section">
+      <div class="grid grid--hero" style="align-items: center;">
+        <div>
+          <h1>Hi, I'm Jeff.</h1>
+          <p style="font-size: var(--font-size-lg);">
+            I'm a Mechatronic Systems Engineer and Software Developer with a passion for building robust, user-centric
+            solutions.
+            Currently ensuring software quality at J.D. Power.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="mailto:jeffrey.boersma@hotmail.com" class="btn btn--primary">Get in Touch</a>
+            <a href="/files/Jeffrey Boersma Resume.pdf" class="btn btn--outline">View Resume</a>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <img src="/images/ProfilePicture.jpg" alt="Jeffrey Boersma"
+            style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; margin: 0 auto; border: 4px solid var(--color-bg-secondary);">
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section">
+      <div class="section__header">
+        <h2>Experience</h2>
+      </div>
+      <div class="grid grid--3-cols">
+        <!-- J.D. Power Analyst -->
+        <a href="pages/jobs/jdpower_qa_analyst.html" class="card">
+          <div class="card__content">
+            <h3 class="card__title">QA Automation Analyst</h3>
+            <div class="card__subtitle">J.D. Power • 2024 - Present</div>
+            <p>Improving software quality through automated testing strategies and tool development.</p>
+          </div>
+          <div class="card__footer">
+            <img src="/images/logos/jdpower.png" alt="J.D. Power" width="24">
+            <span>J.D. Power</span>
+          </div>
+        </a>
+
+        <!-- GDLS -->
+        <a href="pages/jobs/gdls_systems.html" class="card">
+          <div class="card__content">
+            <h3 class="card__title">Systems Engineer</h3>
+            <div class="card__subtitle">General Dynamics Land Systems • 2024</div>
+            <p>Provided systems engineering support for LAV 6.0 and LAV 700 vehicle programs.</p>
+          </div>
+          <div class="card__footer">
+            <img src="/images/logos/generaldynamics.png" alt="GDLS" width="24">
+            <span>GDLS</span>
+          </div>
+        </a>
+
+        <!-- J.D. Power Intern -->
+        <a href="pages/jobs/jdpower_qa.html" class="card">
+          <div class="card__content">
+            <h3 class="card__title">QA Automation Intern</h3>
+            <div class="card__subtitle">J.D. Power • 2021 - 2022</div>
+            <p>Developed automated test scripts and contributed to the Incentive and Offer Management system.</p>
+          </div>
+          <div class="card__footer">
+            <img src="/images/logos/jdpower.png" alt="J.D. Power" width="24">
+            <span>J.D. Power</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section">
+      <div class="section__header">
+        <h2>Education</h2>
+      </div>
+      <a href="pages/education/uwo_besc.html" class="card">
+        <div class="card__content">
+          <h3 class="card__title">Bachelor of Engineering Science (BESc)</h3>
+          <div class="card__subtitle">Western University • 2018 - 2023</div>
+          <p>Mechatronic Systems Engineering. Graduated with distinction, Dean's Honor List all 4 years.</p>
+        </div>
+        <div class="card__footer">
+          <img src="/images/logos/western.png" alt="Western University" width="24">
+          <span>Western University</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section">
+      <div class="section__header">
+        <h2>Projects</h2>
+      </div>
+      <div class="grid grid--3-cols">
+        <!-- Lymph Node Extractor -->
+        <a href="pages/projects/lymph_node_extractor.html" class="card">
+          <img src="/images/thumbs/lymph_node_extractor.png" alt="Lymph Node Extractor" class="card__image">
+          <div class="card__content">
+            <h3 class="card__title">Lymph Node Extractor</h3>
+            <p>Mechatronic Systems Engineering Capstone Project in collaboration with Tenomix.</p>
+          </div>
+        </a>
+
+        <!-- TV Remote Robot -->
+        <a href="pages/projects/tv_remote_passing_robot.html" class="card">
+          <img src="/images/thumbs/tv_remote_robot.png" alt="TV Remote Robot" class="card__image">
+          <div class="card__content">
+            <h3 class="card__title">TV Remote Robot</h3>
+            <p>Robotic manipulator design project for passing a TV remote.</p>
+          </div>
+        </a>
+
+        <!-- Park Bench -->
+        <a href="pages/projects/self_cleaning_park_bench.html" class="card">
+          <img src="/images/thumbs/park_bench.png" alt="Self-Cleaning Park Bench" class="card__image">
+          <div class="card__content">
+            <h3 class="card__title">Self-Cleaning Bench</h3>
+            <p>Microprocessor-controlled self-cleaning park bench prototype.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jeffrey Boersma. Built with Vite & SCSS.</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+        <a href="http://www.linkedin.com/in/jeffreyboersma">LinkedIn</a>
+        <a href="mailto:jeffrey.boersma@hotmail.com">Email</a>
+        <a href="https://github.com/jeffreyboersma">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
