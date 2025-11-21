@@ -34,10 +34,30 @@
         filter: invert(1) hue-rotate(180deg);
     }
 
-    &:hover {
-        background-color: var(--color-bg-secondary-hover);
-        border-color: var(--color-border);
+    [data-theme="dark"] &:hover,
+    [data-theme="dark"] &.active {
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
         color: var(--color-text);
         transform: translateY(-1px);
+    }
+
+    [data-theme="light"] &:hover,
+    [data-theme="light"] &.active {
+        background-color: var(--color-primary-hover);
+        border-color: var(--color-primary-hover);
+        color: var(--color-text);
+        transform: translateY(-1px);
+    }
+}
+
+.tech-highlight {
+    cursor: default;
+    font-weight: bold;
+    transition: color 0.2s ease;
+
+    &:hover,
+    &.active {
+        color: var(--color-primary-hover);
     }
 }

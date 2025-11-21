@@ -58,5 +58,42 @@ document.addEventListener('DOMContentLoaded', () => {
         card.click();
       }
     });
+
+    // Tech Highlight Logic
+    const techHighlights = card.querySelectorAll('.tech-highlight');
+    const chips = card.querySelectorAll('.chip');
+
+    techHighlights.forEach(highlight => {
+      highlight.addEventListener('mouseenter', () => {
+        const techName = highlight.getAttribute('data-tech');
+        chips.forEach(chip => {
+          // Check if chip text content includes the tech name or alt text matches
+          if (chip.textContent.trim() === techName.trim() || chip.querySelector(`img[alt="${techName}"]`)) {
+            chip.classList.add('active');
+          }
+        });
+      });
+
+      highlight.addEventListener('mouseleave', () => {
+        chips.forEach(chip => chip.classList.remove('active'));
+      });
+    });
+
+    chips.forEach(chip => {
+      chip.addEventListener('mouseenter', () => {
+        const techName = chip.textContent.trim();
+        techHighlights.forEach(highlight => {
+          if (highlight.getAttribute('data-tech') === techName) {
+            highlight.classList.add('active');
+          } else {
+            highlight.classList.remove('active');
+          }
+        });
+      });
+
+      chip.addEventListener('mouseleave', () => {
+        techHighlights.forEach(highlight => highlight.classList.remove('active'));
+      });
+    });
   });
 });
