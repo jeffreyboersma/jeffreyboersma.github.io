@@ -20,5 +20,16 @@
         width: 20px;
         height: 20px;
         fill: currentColor;
+        display: none; // Hide both by default
+    }
+
+    // Show moon in light mode (to switch to dark)
+    [data-theme="light"] & .icon-moon {
+        display: block;
+    }
+
+    // Show sun in dark mode (to switch to light)
+    [data-theme="dark"] & .icon-sun {
+        display: block;
     }
 }
