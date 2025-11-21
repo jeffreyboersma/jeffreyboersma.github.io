@@ -17,9 +17,52 @@
         box-shadow: var(--shadow-md);
         background-color: var(--color-bg-secondary-hover);
         color: inherit;
+        cursor: pointer;
 
         .card__title {
             color: var(--color-primary-hover);
+        }
+    }
+
+    &.expanded {
+        grid-column: 1 / -1;
+        cursor: pointer;
+        transform: none;
+        box-shadow: var(--shadow-lg);
+        pointer-events: none; // Prevent clicks on padding/gaps
+
+        &:hover {
+            transform: none;
+            box-shadow: var(--shadow-lg);
+        }
+
+        &:has(.card__details:hover) {
+            background-color: var(--color-bg-secondary);
+
+            .card__title {
+                color: var(--color-text);
+            }
+        }
+
+        .card__content,
+        .card__image,
+        .card__details {
+            pointer-events: auto; // Re-enable clicks on content
+        }
+
+        .card__content>p,
+        .card__footer,
+        .card__subtitle-collapsed {
+            display: none;
+        }
+
+        .card__subtitle-expanded {
+            display: flex;
+        }
+
+        .card__details {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
         }
     }
 
@@ -48,6 +91,18 @@
             font-size: var(--font-size-xl);
             margin-bottom: var(--spacing-xs);
         }
+
+        &-expanded {
+            display: none;
+            align-items: center;
+            gap: var(--spacing-xs);
+
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+        }
     }
 
     &__content {
@@ -67,5 +122,27 @@
             height: 48px;
             object-fit: contain;
         }
+    }
+
+    &__details {
+        display: none;
+        margin-top: var(--spacing-lg);
+        padding-top: var(--spacing-lg);
+        border-top: 1px solid var(--color-border);
+        position: relative;
+        cursor: default;
+        background-color: var(--color-bg-secondary);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
