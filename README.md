@@ -32,7 +32,6 @@ This project uses [Vite](https://vitejs.dev/) for building and development.
 ## Project Structure
 
 - `src/`: Source code (HTML, SCSS, JS).
-  - `pages/`: Sub-pages of the site.
   - `styles/`: SCSS stylesheets.
   - `scripts/`: JavaScript files.
 - `public/`: Static assets (images, PDFs, CNAME) served as-is.
