@@ -5,7 +5,7 @@
     border-radius: var(--border-radius);
     padding: var(--spacing-lg);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-    border: 1px solid var(--color-border);
+    border: var(--border-thickness-card) solid var(--color-border);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -75,6 +75,8 @@
     &__header {
         // Extend to edges by negating parent padding
         margin: calc(-1 * var(--spacing-lg));
+        border-top-left-radius: calc(var(--border-radius) - var(--border-thickness-card));
+        border-top-right-radius: calc(var(--border-radius) - var(--border-thickness-card));
         margin-bottom: 0; //Only extend top/left/right
         padding: var(--spacing-lg); // Restore padding for content
         padding-bottom: 0;
