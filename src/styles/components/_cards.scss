@@ -26,28 +26,28 @@
 
     &.expanded {
         grid-column: 1 / -1;
-        cursor: pointer;
+        cursor: default;
         transform: none;
         box-shadow: var(--shadow-lg);
-        pointer-events: none; // Prevent clicks on padding/gaps
+        pointer-events: none; // Prevent clicks on padding
 
         &:hover {
             transform: none;
             box-shadow: var(--shadow-lg);
-        }
-
-        &:has(.card__details:hover) {
             background-color: var(--color-bg-secondary);
-
-            .card__title {
-                color: var(--color-text);
-            }
         }
 
-        .card__content,
-        .card__image,
-        .card__details {
-            pointer-events: auto; // Re-enable clicks on content
+        .card__header {
+            pointer-events: auto; // Re-enable clicks on header
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--color-bg-secondary-hover);
+
+                .card__title {
+                    color: var(--color-primary-hover);
+                }
+            }
         }
 
         .card__content>p,
@@ -64,6 +64,14 @@
             display: block;
             animation: fadeIn 0.3s ease-in-out;
         }
+    }
+
+    &__header {
+        // Extend to edges by negating parent padding
+        margin: calc(-1 * var(--spacing-lg));
+        margin-bottom: 0; //Only extend top/left/right
+        padding: var(--spacing-lg); // Restore padding for content
+        transition: background-color 0.2s ease;
     }
 
     &__image {
@@ -132,6 +140,7 @@
         position: relative;
         cursor: default;
         background-color: var(--color-bg-secondary);
+        pointer-events: auto; // Re-enable clicks on details
     }
 }
 
