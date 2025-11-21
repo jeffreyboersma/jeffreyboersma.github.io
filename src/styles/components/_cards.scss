@@ -106,7 +106,6 @@
     &__subtitle {
         font-size: var(--font-size-sm);
         color: var(--color-text-muted);
-        margin-bottom: var(--spacing-sm);
         font-weight: 500;
 
         &--large {
@@ -130,6 +129,7 @@
     &__content {
         flex-grow: 1;
         font-size: var(--font-size-sm);
+        margin-bottom: var(--spacing-sm);
     }
 
     &__footer {
