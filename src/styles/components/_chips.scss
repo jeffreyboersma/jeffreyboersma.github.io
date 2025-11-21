@@ -26,6 +26,14 @@
         border-radius: 0; // Show full logo, no circular crop
     }
 
+    [data-theme="light"] & img.light-dark {
+        filter: invert(0);
+    }
+
+    [data-theme="dark"] & img.light-dark {
+        filter: invert(1) hue-rotate(180deg);
+    }
+
     &:hover {
         background-color: var(--color-bg-secondary-hover);
         border-color: var(--color-border);
