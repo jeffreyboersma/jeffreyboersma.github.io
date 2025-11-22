@@ -56,8 +56,13 @@
     font-weight: bold;
     transition: color 0.2s ease;
 
-    &:hover,
-    &.active {
+    [data-theme="dark"] &:hover,
+    [data-theme="dark"] &.active {
         color: var(--color-primary-hover);
+    }
+
+    [data-theme="light"] &:hover,
+    [data-theme="light"] &.active {
+        color: var(--color-primary);
     }
 }
