@@ -151,6 +151,29 @@
         }
     }
 
+    &__repo {
+        margin-top: var(--spacing-md);
+        padding-top: var(--spacing-sm);
+        border-top: 1px solid var(--color-border);
+        display: flex;
+        gap: var(--spacing-sm);
+        align-items: center;
+
+        a {
+            background-color: var(--color-bg);
+            text-decoration: none;
+            display: inline-flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+    }
+
     &__details {
         display: none;
         padding-top: var(--spacing-sm);

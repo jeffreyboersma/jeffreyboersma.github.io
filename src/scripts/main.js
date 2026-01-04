@@ -18,8 +18,48 @@ if (themeToggleBtn) {
   themeToggleBtn.addEventListener('click', toggleTheme);
 }
 
+// Ensure external links open in a new tab and are safe
+function updateExternalLinks(root = document) {
+  const anchors = root.querySelectorAll('a[href]');
+  anchors.forEach(a => {
+    try {
+      const url = new URL(a.href, location.href);
+      // Only treat http(s) links that point to a different host as external
+      if ((url.protocol === 'http:' || url.protocol === 'https:') && url.host !== location.host) {
+        a.setAttribute('target', '_blank');
+        // preserve any existing rel values while ensuring security
+        const rel = new Set((a.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
+        rel.add('noopener');
+        rel.add('noreferrer');
+        a.setAttribute('rel', Array.from(rel).join(' '));
+      }
+    } catch (e) {
+      // ignore invalid URLs
+    }
+  });
+}
+
+// Observe DOM changes to catch dynamically-inserted links
+const externalLinksObserver = new MutationObserver((mutations) => {
+  for (const m of mutations) {
+    if (m.addedNodes && m.addedNodes.length) {
+      m.addedNodes.forEach(node => {
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          if (node.matches && node.matches('a[href]')) updateExternalLinks(node.parentNode || document);
+          else updateExternalLinks(node);
+        }
+      });
+    }
+  }
+});
+
 // Card Expansion Logic
 document.addEventListener('DOMContentLoaded', () => {
+  // Apply external link behavior once DOM is ready
+  updateExternalLinks(document);
+  // Start observing additions to the document body
+  externalLinksObserver.observe(document.body, { childList: true, subtree: true });
+
   const cards = document.querySelectorAll('.card');
 
   cards.forEach(card => {
