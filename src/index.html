@@ -521,14 +521,14 @@
         <h2>Projects</h2>
       </div>
       <div class="grid grid--3-cols">
-        <!-- Lymph Node Extractor -->
-        <div class="card" role="button" tabindex="0" data-card-id="lymph-node-extractor">
+        <!-- Money App (Soldi) -->
+        <div class="card" role="button" tabindex="0" data-card-id="money-app">
           <div class="card__header">
-            <img src="/images/thumbs/lymph_node_extractor.png" alt="Lymph Node Extractor" class="card__image">
+            <img src="/images/logos/github.png" alt="Money App" class="card__image">
 
             <div class="card__content">
-              <h3 class="card__title">Lymph Node Extractor</h3>
-              <p>Capstone mechatronics project, partnered with Tenomix, delivering a functional end-effector prototype for tissue sampling.</p>
+              <h3 class="card__title">soldi (Money App)</h3>
+              <p>A Next.js dashboard that uses Plaid to link financial institutions and display consolidated account balances.</p>
             </div>
 
           </div>
@@ -539,17 +539,121 @@
                 <div>
                   <h3>Summary</h3>
                   <p>
-                    As part of a four-person capstone team partnered with Tenomix Inc., I led the design and development of a functional end-effector for a cartesian manipulator to extract, hold, and release core samples from fatty tissue. The prototype was delivered within eight months and earned third place at the senior design showcase.
+                    A privacy-minded web dashboard built with Next.js and TypeScript that integrates the Plaid API to
+                    let users connect bank accounts and view balances across many institutions in one place. The app
+                    supports Plaid Link for onboarding, exchanges public tokens server-side, and fetches account balances
+                    for display. Future work includes viewing transaction history, account details, and exporting data.
                   </p>
                 </div>
                 <div style="margin-top: 2rem;">
                   <h3>Key Points</h3>
                   <ul style="padding-left: 1.5rem; color: var(--color-text-muted);">
-                    <li>Designed an industry-aligned end effector for extracting, securing, and releasing core samples; validated performance on both imitation and real tissue.</li>
-                    <li>Delivered a functional prototype in collaboration with Tenomix within an eight-month schedule, incorporating sponsor feedback through iterative design reviews.</li>
-                    <li>Implemented stepper motor control and homing routines in <span class="tech-highlight" data-tech="Arduino">Arduino</span>/<span class="tech-highlight" data-tech="C">C</span>, incorporating limit-switch safety interlocks.</li>
-                    <li>Developed wiring schematics and a complete bill of materials to support reproducible assembly and testing.</li>
-                    <li>Authored a comprehensive design document and test procedures to support verification and future development.</li>
+                    <li>Uses Plaid Link to securely connect financial institutions and exchange tokens server-side.</li>
+                    <li>Fetches balances via Plaid endpoints and groups accounts by institution or type.</li>
+                    <li>Built with Next.js (App Router), React, and TypeScript; styled with Tailwind CSS.</li>
+                    <li>Server routes handle token exchange, balance retrieval, and item removal (examples in repo).</li>
+                    <li>Planned: transaction history view, richer account details, and CSV export functionality.</li>
+                  </ul>
+                </div>
+              </div>
+              <aside class="page-layout__sidebar">
+                <h3>Tech Stack</h3>
+                <div class="chip-list">
+                  <a href="https://nextjs.org/" class="chip"><img src="/images/logos/nextjs.png" alt="">Next.js</a>
+                  <a href="https://www.typescriptlang.org/" class="chip"><img src="/images/logos/typescript.png" class="light-dark" alt="">TypeScript</a>
+                  <a href="https://react.dev/" class="chip"><img src="/images/logos/react.png" alt="">React</a>
+                  <a href="https://plaid.com/" class="chip"><img src="/images/logos/plaid.png" class="light-dark" alt="">Plaid</a>
+                  <a href="https://tailwindcss.com/" class="chip"><img src="/images/logos/tailwindcss.png" alt="">Tailwind CSS</a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Website -->
+        <div class="card" role="button" tabindex="0" data-card-id="personal-website">
+          <div class="card__header">
+            <img src="/images/logos/icon.png" alt="Personal Website" class="card__image">
+
+            <div class="card__content">
+              <h3 class="card__title">Personal Website</h3>
+              <p>A personal site and portfolio built with Vite, modern JavaScript, and Sass — source available in this
+                repository.</p>
+            </div>
+
+          </div>
+          <div class="card__details">
+
+            <div class="page-layout">
+              <div class="page-layout__content">
+                <div>
+                  <h3>Summary</h3>
+                  <p>
+                    The website is a static portfolio built with Vite, Sass, and modular JavaScript. It demonstrates
+                    responsive layout, accessible components, and a lightweight build pipeline for fast loading and easy
+                    maintenance.
+                  </p>
+                </div>
+              </div>
+              <aside class="page-layout__sidebar">
+                <h3>Tech Stack</h3>
+                <div class="chip-list">
+                  <a href="https://vitejs.dev/" class="chip"><img src="/images/logos/vite.png" alt="">Vite</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="chip"><img src="/images/logos/javascript.png" alt="">JavaScript</a>
+                  <a href="https://en.wikipedia.org/wiki/HTML" class="chip"><img src="/images/logos/html.png"
+                    class="light-dark" alt="">HTML</a>
+                  <a href="https://en.wikipedia.org/wiki/CSS" class="chip"><img src="/images/logos/css.png"
+                    class="light-dark" alt="">CSS</a>
+                  <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" class="chip"><img src="/images/logos/scss.png" alt="">SCSS</a>
+                  <a href="https://en.wikipedia.org/wiki/Git" class="chip"><img src="/images/logos/git.png"
+                    alt="">Git</a>
+                  <a href="https://github.com/jeffreyboersma/jeffreyboersma.github.io" class="chip"><img
+                    src="/images/logos/github.png" class="light-dark" alt="">GitHub</a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lymph Node Extractor -->
+        <div class="card" role="button" tabindex="0" data-card-id="lymph-node-extractor">
+          <div class="card__header">
+            <img src="/images/thumbs/lymph_node_extractor.png" alt="Lymph Node Extractor" class="card__image">
+
+            <div class="card__content">
+              <h3 class="card__title">Lymph Node Extractor</h3>
+              <p>Capstone mechatronics project, partnered with Tenomix, delivering a functional end-effector prototype
+                for tissue sampling.</p>
+            </div>
+
+          </div>
+          <div class="card__details">
+
+            <div class="page-layout">
+              <div class="page-layout__content">
+                <div>
+                  <h3>Summary</h3>
+                  <p>
+                    As part of a four-person capstone team partnered with Tenomix Inc., I led the design and development
+                    of a functional end-effector for a cartesian manipulator to extract, hold, and release core samples
+                    from fatty tissue. The prototype was delivered within eight months and earned third place at the
+                    senior design showcase.
+                  </p>
+                </div>
+                <div style="margin-top: 2rem;">
+                  <h3>Key Points</h3>
+                  <ul style="padding-left: 1.5rem; color: var(--color-text-muted);">
+                    <li>Designed an industry-aligned end effector for extracting, securing, and releasing core samples;
+                      validated performance on both imitation and real tissue.</li>
+                    <li>Delivered a functional prototype in collaboration with Tenomix within an eight-month schedule,
+                      incorporating sponsor feedback through iterative design reviews.</li>
+                    <li>Implemented stepper motor control and homing routines in <span class="tech-highlight"
+                        data-tech="Arduino">Arduino</span>/<span class="tech-highlight" data-tech="C">C</span>,
+                      incorporating limit-switch safety interlocks.</li>
+                    <li>Developed wiring schematics and a complete bill of materials to support reproducible assembly
+                      and testing.</li>
+                    <li>Authored a comprehensive design document and test procedures to support verification and future
+                      development.</li>
                   </ul>
                 </div>
               </div>
@@ -557,7 +661,7 @@
                 <h3>Tech Stack</h3>
                 <div class="chip-list">
                   <a href="https://en.wikipedia.org/wiki/Arduino" class="chip"><img src="/images/logos/arduino.svg"
-                    alt="">Arduino</a>
+                      alt="">Arduino</a>
                   <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="chip"><img
                       src="/images/logos/c.png" alt="">C</a>
                   <a href="https://en.wikipedia.org/wiki/MATLAB" class="chip"><img src="/images/logos/matlab.png"
@@ -583,7 +687,8 @@
 
             <div class="card__content">
               <h3 class="card__title">Assistive Robot Control System</h3>
-              <p>Course project designing and simulating an assistive serial-link manipulator and control system to reliably pass a TV remote.</p>
+              <p>Course project designing and simulating an assistive serial-link manipulator and control system to
+                reliably pass a TV remote.</p>
             </div>
 
           </div>
@@ -593,15 +698,22 @@
               <div class="page-layout__content">
                 <div>
                   <h3>Summary</h3>
-                  <p>Designed a serial-link manipulator and developed its kinematics, dynamics, path-planning, and control algorithms. The design was validated through simulation and documented with analysis and test results.</p>
+                  <p>Designed a serial-link manipulator and developed its kinematics, dynamics, path-planning, and
+                    control algorithms. The design was validated through simulation and documented with analysis and
+                    test results.</p>
                 </div>
                 <div style="margin-top: 2rem;">
                   <h3>Key Points</h3>
                   <ul style="padding-left: 1.5rem; color: var(--color-text-muted);">
-                    <li>Designed and modelled a serial-link manipulator and validated its behaviour through simulation.</li>
-                    <li>Implemented forward, inverse, and differential kinematics algorithms in <span class="tech-highlight" data-tech="MATLAB">MATLAB</span> and simulated their performance in <span class="tech-highlight" data-tech="Simulink">Simulink</span>.</li>
-                    <li>Developed a potential-field path-planning approach to enable obstacle avoidance within the workspace.</li>
-                    <li>Compiled a final technical report documenting design choices, control strategies, and simulation results.</li>
+                    <li>Designed and modelled a serial-link manipulator and validated its behaviour through simulation.
+                    </li>
+                    <li>Implemented forward, inverse, and differential kinematics algorithms in <span
+                        class="tech-highlight" data-tech="MATLAB">MATLAB</span> and simulated their performance in <span
+                        class="tech-highlight" data-tech="Simulink">Simulink</span>.</li>
+                    <li>Developed a potential-field path-planning approach to enable obstacle avoidance within the
+                      workspace.</li>
+                    <li>Compiled a final technical report documenting design choices, control strategies, and simulation
+                      results.</li>
                   </ul>
                 </div>
               </div>
@@ -640,16 +752,23 @@
                 <div>
                   <h3>Summary</h3>
                   <p>
-                    Designed a microcontroller-based control system that monitors environmental inputs and actuates a cleaning mechanism for a park bench prototype. Implemented firmware in <span class="tech-highlight" data-tech="C">C</span>, validated behavior in an ARM Cortex-A9 simulator, and developed tools to prepare VGA display assets.
+                    Designed a microcontroller-based control system that monitors environmental inputs and actuates a
+                    cleaning mechanism for a park bench prototype. Implemented firmware in <span class="tech-highlight"
+                      data-tech="C">C</span>, validated behavior in an ARM Cortex-A9 simulator, and developed tools to
+                    prepare VGA display assets.
                   </p>
                 </div>
                 <div style="margin-top: 2rem;">
                   <h3>Key Points</h3>
                   <ul style="padding-left: 1.5rem; color: var(--color-text-muted);">
-                    <li>Designed control logic and firmware in <span class="tech-highlight" data-tech="C">C</span> to process sensor inputs and trigger cleaning actuations.</li>
-                    <li>Validated system behaviour on an ARM Cortex-A9 DE10 simulator and integrated a VGA display interface for prototype visualization.</li>
-                    <li>Investigated memory mapping for the simulator display and developed conversion tooling in <span class="tech-highlight" data-tech="MATLAB">MATLAB</span> to prepare image assets.</li>
-                    <li>Authored supporting documentation and a final report to capture system design, verification, and deployment guidance.</li>
+                    <li>Designed control logic and firmware in <span class="tech-highlight" data-tech="C">C</span> to
+                      process sensor inputs and trigger cleaning actuations.</li>
+                    <li>Validated system behaviour on an ARM Cortex-A9 DE10 simulator and integrated a VGA display
+                      interface for prototype visualization.</li>
+                    <li>Investigated memory mapping for the simulator display and developed conversion tooling in <span
+                        class="tech-highlight" data-tech="MATLAB">MATLAB</span> to prepare image assets.</li>
+                    <li>Authored supporting documentation and a final report to capture system design, verification, and
+                      deployment guidance.</li>
                   </ul>
                 </div>
               </div>
